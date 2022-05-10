@@ -50,9 +50,9 @@ namespace Sec5
                 for (byte j = 0; j < 9; j++)
                 {   
                     textBoxes[i, j] = boxes[((9 * i) + j)];
-                    textBoxes[i, j].BorderStyle = BorderStyle.FixedSingle;
+                    textBoxes[i, j].BorderStyle = BorderStyle.Fixed3D;
                     textBoxes[i, j].Location = new Point(i * 50 + 25, j * 50 + 25);
-                    textBoxes[i, j].Size = new Size(25, 25);
+                    textBoxes[i, j].Size = new Size(50, 30);
                     textBoxes[i, j].TextAlign = HorizontalAlignment.Center;
                     textBoxes[i, j].Font = new Font(SystemFonts.DefaultFont.FontFamily, 20);
                     textBoxes[i, j].BackColor = ((i / 3) + (j / 3)) % 2 == 0 ? Color.Cyan : Color.LightGreen;
